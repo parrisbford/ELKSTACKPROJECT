@@ -72,7 +72,8 @@ You can orchestrate the entire app environment no matter where it is deployed,us
 
 
 The playbook implements the following tasks:
-### TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+### TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+
 - install docker.io
 - install python-pip
 - install docker container
@@ -105,7 +106,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the install-elk.yml file to ansible folder.
 - Update the host file to include:
-[webservers]
+
+-webservers
 #alpha.example.org
 #beta.example.org
 #192.168.1.100
@@ -113,11 +115,11 @@ SSH into the control node and follow the steps below:
 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 
-[elk]
+-elk
 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
 
-- Run the playbook, and navigate to ElkVm_ to check that the installation worked as expected.
+- Run the playbook, and navigate to ElkVm to check that the installation worked as expected.
 
 ### TODO: Answer the following questions to fill in the blanks:
 - _Which file is the playbook? Where do you copy it? nano install-elk.yml, inside of the /etc/ansible folder. 
